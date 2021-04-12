@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+}
+h1{
+    border: black solid 2px;
+    background-color: rgb(155, 100, 19);
+    margin: 1em;
+    text-align: center;
+}
+section h3{
+    background-color: rgb(155, 100, 19);
+    color : rgb(0, 0, 0) ;
+    padding: 10px;
+    margin: 10px;
+
+}
+section p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(5, 59, 12);
+  margin: 15px;
+    
+}
