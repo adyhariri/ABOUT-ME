@@ -3,20 +3,25 @@ header {
 }
 h1{
     border: black solid 2px;
-    background-color: rgb(155, 100, 19);
+    background-color: rgb(134, 12, 12);
     margin: 1em;
     text-align: center;
 }
 section h3{
-    background-color: rgb(155, 100, 19);
-    color : rgb(0, 0, 0) ;
+    background-color: rgb(13, 7, 99);
+    color : rgb(255, 255, 255) ;
     padding: 10px;
     margin: 10px;
 
 }
 section p{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(5, 59, 12);
+    background-color: rgb(73, 97, 76);
   margin: 15px;
     
+}
+main section li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(8, 80, 18, 0.507);
+  margin: 15px;
 }
