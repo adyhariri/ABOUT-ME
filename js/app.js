@@ -50,23 +50,22 @@ if (fifthQuestion === 'y' || fifthQuestion === 'yes') {
 } else {
     alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
 }
-//alert('game done , thank you ' + userName + ' for your visiting');
 for(let i=0;i<=4;i++){
     if (i==4){
         alert('sorry you spent all your opportunities , the correct answer is 4');
         break;
     }
-    let sixthQuestion = prompt ("guess which month i was porn on ","use number instead of month name like 1,2,3..etc");
-     if(sixthQuestion==4){
-         alert('you are correct');
-         score++;
-         break;
-     }else if (sixthQuestion<4){
-         alert('too low, try again');
-     }else {
+    let sixthQuestion = prompt ("guess which month i was born on ","use number instead of month name like 1,2,3..etc");
+    if(sixthQuestion==4){
+        alert('you are correct');
+        score++;
+        break;
+    }else if (sixthQuestion<4){
+        alert('too low, try again');
+    }else {
         alert('too high, try again');
-     }
     }
+}
 let cities = ['damascus','daraa','amman','irbid','saida'];
 console.log(cities);
 for(let i=0 ; i<=6;i++){
@@ -82,8 +81,9 @@ for(let i=0 ; i<=6;i++){
             j=6765;
             i=767;
         }
-       
+        
     }
 }
 console.log(score);
 alert('your score is '+score);
+alert('game done , thank you ' + userName + ' for your visiting');
