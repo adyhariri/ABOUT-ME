@@ -13,3 +13,16 @@ we add on this lab two more question about me and the visiter should guess the r
   i used : for loop , if else statment , prompt , alert and console 
   >  ***seconde question*** will ask about one of my favorite cities , the visiter has 6 opportionities to guess the correct answer .
   i used same as first question technickes  beside array .
+
+**lab04**
+
+today's lab was about function we move our question to function which make it easy to use many time .
+
+it was the most funniest lab cause it is working with partner what we call it ***pair programming***
+
+i was *navigator* on : 
+
+https://github.com/adyhariri/ABOUT-ME/pull/1
+
+i was *driver* on : 
+https://github.com/Samerodeh/lab-02/pull/1
