@@ -6,23 +6,50 @@ alert('hello ' + userName + ' let us play guessing game ');
 console.log(userName);
 alert('your answer must be y/n or yes/no');
 let firstQuestion = prompt("Is my age more than 20 ?").toLowerCase();
-if (firstQuestion === 'y' || firstQuestion === 'yes') {
+function guessingAge (){
+    if (firstQuestion === 'y' || firstQuestion === 'yes') {
+        alert('Your answer  is correct');
+        score++;
+    } else if (firstQuestion === 'n' || firstQuestion === 'no') {
+        alert('Your answer is wrong');
+    } else {
+        alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
+    }    
+}
+
+guessingAge (); 
+
+
+/*if (firstQuestion === 'y' || firstQuestion === 'yes') {
     alert('Your answer  is correct');
     score++;
 } else if (firstQuestion === 'n' || firstQuestion === 'no') {
     alert('Your answer is wrong');
 } else {
     alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}
+}*/
+
 let secondeQuestion = prompt("do i like animals  ?").toLowerCase();
-if (secondeQuestion === 'n' || secondeQuestion === 'no') {
+function animals (){
+    if (secondeQuestion === 'n' || secondeQuestion === 'no') {
+        alert('Your answer  is correct');
+        score++;
+    } else if (secondeQuestion === 'y' || secondeQuestion === 'yes') {
+        alert('Your answer is wrong');
+    } else {
+        alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
+    }
+}
+animals ();
+
+/*if (secondeQuestion === 'n' || secondeQuestion === 'no') {
     alert('Your answer  is correct');
     score++;
 } else if (secondeQuestion === 'y' || secondeQuestion === 'yes') {
     alert('Your answer is wrong');
 } else {
     alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}
+}*/
 let thirdQuestion = prompt("Is my favorite color nevy?").toLowerCase();
 if (thirdQuestion === 'y' || thirdQuestion === 'yes') {
     alert('Your answer  is correct');
