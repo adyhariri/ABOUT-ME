@@ -1,3 +1,8 @@
+body{
+  background-image: url(https://st.depositphotos.com/3008028/4295/i/950/depositphotos_42951033-stock-photo-high-quality-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 header {
     width: 100%;
 }
@@ -8,7 +13,7 @@ h1{
     text-align: center;
 }
 section h3{
-    background-color: rgb(13, 7, 99);
+    background-color: rgb(8, 3, 66);
     color : rgb(255, 255, 255) ;
     padding: 10px;
     margin: 10px;
@@ -16,12 +21,12 @@ section h3{
 }
 section p{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(73, 97, 76);
+    background-color: rgba(29, 77, 35, 0.856);
   margin: 15px;
     
 }
 main section li{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(8, 80, 18, 0.507);
+    background-color: rgba(8, 61, 15, 0.603);
   margin: 15px;
 }
