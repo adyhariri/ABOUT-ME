@@ -1,82 +1,28 @@
 'use strict';
 let score=0;
-alert('hello and welcome to my website ');
-let userName = prompt('what is your name ? ');
-alert('hello ' + userName + ' let us play guessing game ');
-console.log(userName);
-alert('your answer must be y/n or yes/no');
-let firstQuestion = prompt("Is my age more than 20 ?").toLowerCase();
-function guessingAge (){
-    if (firstQuestion === 'y' || firstQuestion === 'yes') {
+let questionsArray=['Is my age more than 20 ?','do i like animals  ?','Is my favorite color nevy?','Do i like programming?','realMadrid is the best football team?'];
+function yesAndNoQuestions(questionNumber){
+    let askFromArray=prompt(questionsArray[questionNumber-1]);
+    if (askFromArray === 'y' || askFromArray === 'yes') {
         alert('Your answer  is correct');
         score++;
-    } else if (firstQuestion === 'n' || firstQuestion === 'no') {
+    } else if (askFromArray === 'n' || askFromArray === 'no') {
         alert('Your answer is wrong');
     } else {
         alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
     }    
 }
+alert('hello and welcome to my website ');
+let userName = prompt('what is your name ? ');
+alert('hello ' + userName + ' let us play guessing game ');
+alert('your answer must be y/n or yes/no');
 
-guessingAge (); 
+yesAndNoQuestions(1);
+yesAndNoQuestions(2);
+yesAndNoQuestions(3);
+yesAndNoQuestions(4);
+yesAndNoQuestions(5);
 
-
-/*if (firstQuestion === 'y' || firstQuestion === 'yes') {
-    alert('Your answer  is correct');
-    score++;
-} else if (firstQuestion === 'n' || firstQuestion === 'no') {
-    alert('Your answer is wrong');
-} else {
-    alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}*/
-
-let secondeQuestion = prompt("do i like animals  ?").toLowerCase();
-function animals (){
-    if (secondeQuestion === 'n' || secondeQuestion === 'no') {
-        alert('Your answer  is correct');
-        score++;
-    } else if (secondeQuestion === 'y' || secondeQuestion === 'yes') {
-        alert('Your answer is wrong');
-    } else {
-        alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-    }
-}
-animals ();
-
-/*if (secondeQuestion === 'n' || secondeQuestion === 'no') {
-    alert('Your answer  is correct');
-    score++;
-} else if (secondeQuestion === 'y' || secondeQuestion === 'yes') {
-    alert('Your answer is wrong');
-} else {
-    alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}*/
-let thirdQuestion = prompt("Is my favorite color nevy?").toLowerCase();
-if (thirdQuestion === 'y' || thirdQuestion === 'yes') {
-    alert('Your answer  is correct');
-    score++;
-} else if (thirdQuestion === 'n' || thirdQuestion === 'no') {
-    alert('Your answer is wrong');
-} else {
-    alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}
-let fourthQuestion = prompt("Do i like programming?").toLowerCase();
-if (fourthQuestion === 'y' || fourthQuestion === 'yes') {
-    alert('Your answer  is correct');
-    score++;
-} else if (fourthQuestion === 'n' || fourthQuestion === 'no') {
-    alert('Your answer is wrong');
-} else {
-    alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}
-let fifthQuestion = prompt("realMadrid is the best football team?").toLowerCase();
-if (fifthQuestion === 'y' || fifthQuestion === 'yes') {
-    alert('sure it is correct');
-    score++;
-} else if (fifthQuestion === 'n' || fifthQuestion === 'no') {
-    alert('Your answer is wrong');
-} else {
-    alert('You only can answer using y/n, yes/no. Now you will be taken to the next question');
-}
 for(let i=0;i<=4;i++){
     if (i==4){
         alert('sorry you spent all your opportunities , the correct answer is 4');
@@ -94,7 +40,6 @@ for(let i=0;i<=4;i++){
     }
 }
 let cities = ['damascus','daraa','amman','irbid','saida'];
-console.log(cities);
 for(let i=0 ; i<=6;i++){
     if (i==6){
         alert('sorry you spent all your opportunities , here is my favorite arabic cities :'+cities);
@@ -111,6 +56,5 @@ for(let i=0 ; i<=6;i++){
         
     }
 }
-console.log(score);
 alert('your score is '+score);
 alert('game done , thank you ' + userName + ' for your visiting');
